@@ -31,8 +31,7 @@ public class Main {
         for (int i = 0; i < transports.length; i++) {
             Transport currentTransport = transports[i];
             if (currentTransport.getWheelsCount() == min) {
-                System.out.println(currentTransport + " = " + min);
-
+                System.out.println(currentTransport.toString());
             }
         }
 

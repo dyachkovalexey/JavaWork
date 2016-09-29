@@ -6,7 +6,12 @@ package ru.itis;
 abstract class Transport {
     private  int wheelsCount;
 
+    public String toString() {
+        return  "Transport: " + wheelsCount;
+    }
+
     public Transport(int wheelsCount) {
+
         this.wheelsCount = wheelsCount;
     }
 
