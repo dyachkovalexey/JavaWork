@@ -24,17 +24,6 @@ public class Tests {
 
 
     @Test
-    public void testParse() throws Exception {
-        String expected[] = {"Hello", ",", "World", "1"};
-        String actual[] = tokenizer.parse(this.testText);
-
-        for (int i = 0; i < expected.length; i++) {
-            assertEquals(expected[i], actual[i]);
-        }
-    }
-
-
-    @Test
     public void testPunctuationWhoI() throws Exception {
         String expected = " - знак пунктуации";
         String actual = punctuations.whoI(testTkn[1]);

@@ -6,9 +6,10 @@ import jdk.nashorn.internal.parser.Token;
  * Created by Lo0ny on 03.10.2016.
  */
 public class Numbers implements Tokenizer {
+
     @Override
-    public String[] parse(String text) {
-        return new String[0];
+    public void parse(String text) {
+
     }
 
     @Override

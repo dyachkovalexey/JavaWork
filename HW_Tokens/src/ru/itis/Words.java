@@ -5,8 +5,8 @@ package ru.itis;
  */
 public class Words implements Tokenizer {
     @Override
-    public String[] parse(String text) {
-        return new String[0];
+    public void parse(String text) {
+
     }
 
 
