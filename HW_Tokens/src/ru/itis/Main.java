@@ -7,20 +7,21 @@ public class Main {
     public static void main(String[] args) {
 
         // считывание строки
-        Scanner inp = new Scanner(System.in);
-        String text = inp.nextLine();
-        SimpleTokenizerImpl sti = new SimpleTokenizerImpl();
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        Tokenizer tokenizer = new SimpleTokenizerImpl();
 
         Tokenizer words = new Words();
         Tokenizer numbers = new Numbers();
         Tokenizer punctuations = new Punctuations();
 
         //разбитие строки на токены
-        String tkn[] = sti.tokenizer.parse(text);
+        String tkn[] = tokenizer.parse(text);
 
 
+        //TODO: раскидать реализации по классам
         //определение типа токенов и вывод на экран
-        for (int i = 0; i <= sti.count; i++) {
+        for (int i = 0; i <= tokenizer.count; i++) {
             text ="";
 
             text += words.whoI(tkn[i]);
@@ -30,5 +31,5 @@ public class Main {
             tkn[i] += text;
             System.out.println(tkn[i]);
         }
-        }
+    }
 }

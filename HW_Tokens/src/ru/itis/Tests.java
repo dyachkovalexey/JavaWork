@@ -26,7 +26,7 @@ public class Tests {
     @Test
     public void testParse() throws Exception {
         String expected[] = {"Hello", ",", "World", "1"};
-        String actual[] = sti.tokenizer.parse(this.testText);
+        String actual[] = tokenizer.parse(this.testText);
 
         for (int i = 0; i < expected.length; i++) {
             assertEquals(expected[i], actual[i]);
